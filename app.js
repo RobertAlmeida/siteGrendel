@@ -7,6 +7,6 @@ app.get('*', function(req, res){
   res.redirect('/');
 });
 
-let port = 3000;
+let port = process.env.PORT || 3000
 app.listen(port);
 console.log('App ROdando', port);
