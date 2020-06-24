@@ -5,6 +5,7 @@ app.use(express.static(__dirname));
 
 app.get('*', function(req, res){
   res.redirect('/');
+  console.log('MAIS OU ACESSO!!!!!!!!!!!!!!')
 });
 
 let port = process.env.PORT || 3000
