@@ -3,8 +3,8 @@ let app = express();
 
 app.use(express.static(__dirname));
 
-app.get('*', function(req, res){
-  res.redirect('/');
+app.get('*', function (req, res) {
+
   console.log('');
   console.log('');
   console.log('');
@@ -16,6 +16,8 @@ app.get('*', function(req, res){
   console.log('');
   console.log('');
   console.log('');
+
+  res.redirect('/');
 
 });
 
